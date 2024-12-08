@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="icon" type="image/x-icon" href="C:/Users/Bell/Desktop/CLG M.html/logo.jpeg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f9;
+            padding-top: 50px;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #heading {
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: rgb(130, 11, 108); /* Main heading color */
+            font-size: 1.8em;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.2em;
+        }
+
+        #subheading {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 1.1em;
+            color: rgb(130, 11, 108); /* Same color as main heading */
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 1px solid #000; /* Black line */
+            width: 80%; 
+            margin: 10px auto; /* Center the line */
+        }
+
+        #table h2 {
+            font-size: 1.8em;
+            color: rgb(130, 11, 108);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #table {
+            margin: 30px auto;
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            border: 3px solid rgb(130, 11, 108);
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: right; /* Align the text to the right */
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(130, 11, 108);
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(100, 10, 85);
+        }
+
+        h4 {
+            margin-top: 20px;
+        }
+
+        h4 a {
+            color: rgb(130, 11, 108);
+            text-decoration: none;
+        }
+
+        h4 a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Heading and Subheading -->
+    <div class="header-container">
+        <div id="heading">
+            <h1>ST. ANN'S COLLEGE FOR WOMEN</h1>
+        </div>
+        
+        <!-- Subheading with same color as main heading -->
+        <div id="subheading">
+            <p>(Autonomous), Affiliated To Osmania University, NAAC Reaccredited with 'A+' Grade</p>
+            <p>College with Potential for Excellence by UGC, Mehdipatnam, Hyderabad - 500 028</p>
+        </div>
+
+        <!-- Black Line -->
+        <hr>
+    </div>
+
+    <!-- Student Login Section -->
+    <center>
+        <div id="table">
+            <h2>STUDENT LOGIN</h2>
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <td><input type="text" name="username" placeholder="Enter your username"></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" name="password" placeholder="Enter your password"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><a href="student-dashboard.html"><input type="submit" value="Login"></a></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+
+    <!-- Link to Create New Account -->
+    <center>
+        <h4>
+            <a href="newaccount.html">DON'T HAVE AN ACCOUNT?</a>
+        </h4>
+    </center>
+
+</body>
+</html>
