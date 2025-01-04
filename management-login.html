@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Login</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f9;
+            padding-top: 50px;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(130, 11, 108);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold; 
+            font-size: 2.5em; 
+        }
+        form {
+            margin: 20px auto;
+            width: 350px;
+            background-color: #fff;
+            padding: 30px;
+            border: 2px solid rgb(130, 11, 108);
+            border-radius: 10px;
+            text-align: left;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: rgb(130, 11, 108);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(100, 10, 85);
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Management Login</h1>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <input type="submit" value="Login">
+        <div class="error" id="error-message"></div>
+    </form>
+
+    <script>
+        const form = document.getElementById('login-form');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); 
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).+$/;
+
+            if (username && passwordRegex.test(password)) {
+                window.location.href = "welcome.html"; // Corrected path to redirect
+            } else {
+                errorMessage.textContent = 'Invalid password. Password must contain both letters and numbers.';
+            }
+        });
+    </script>
+</body>
+</html>

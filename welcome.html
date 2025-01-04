@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Management</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(130, 11, 108);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        textarea {
+            width: 80%;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+            padding: 10px;
+            border: 2px solid rgb(130, 11, 108);
+            border-radius: 10px;
+            font-size: 1em;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 80%;
+            margin: 10px auto 0 auto;
+        }
+        .button-container button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .save-button {
+            background-color: rgb(130, 11, 108);
+        }
+        .save-button:hover {
+            background-color: rgb(100, 10, 85);
+        }
+        .send-button {
+            background-color: rgb(34, 139, 34); /* Green color */
+        }
+        .send-button:hover {
+            background-color: rgb(28, 110, 28);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Management</h1>
+    <p>Draft your message below:</p>
+    <textarea id="message-box" placeholder="Write your message here..."></textarea>
+
+    <div class="button-container">
+        <button class="save-button" id="save-btn">Save</button>
+        <button class="send-button" id="send-btn">Send</button>
+    </div>
+
+    <script>
+        const saveButton = document.getElementById('save-btn');
+        const sendButton = document.getElementById('send-btn');
+        const messageBox = document.getElementById('message-box');
+
+        // Save Button Click Handler
+        saveButton.addEventListener('click', () => {
+            const message = messageBox.value.trim();
+            if (message) {
+                alert('Message saved successfully!');
+                // Implement save functionality here (e.g., save to local storage or server)
+                console.log('Saved message:', message);
+            } else {
+                alert('Message box is empty. Please write a message before saving.');
+            }
+        });
+
+        // Send Button Click Handler
+        sendButton.addEventListener('click', () => {
+            const message = messageBox.value.trim();
+            if (message) {
+                alert('Message sent successfully!');
+                // Implement send functionality here (e.g., send message to server)
+                console.log('Sent message:', message);
+            } else {
+                alert('Message box is empty. Please write a message before sending.');
+            }
+        });
+    </script>
+</body>
+</html>

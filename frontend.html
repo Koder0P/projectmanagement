@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST. ANN'S COLLEGE</title>
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style for the overall page */
+        body {
+            background-image: url('background image.jpg'); /* Correct relative path to the image */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            background-attachment: fixed;
+        }
+
+        /* Header container to position heading */
+        .header-container {
+            display: block;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Heading container with translucent white background */
+        #heading {
+            color: rgb(130, 11, 108);
+            text-align: center;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px 0 40px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Main heading (ST. ANN'S COLLEGE FOR WOMEN) */
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: rgb(130, 11, 108);
+            font-size: 2.5em; /* Adjusted for better visibility */
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.2em;
+        }
+
+        /* Hover effect for the main heading */
+        h1:hover {
+            background-color: rgb(130, 11, 108);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* Subheading */
+        h3 {
+            font-size: 20px;
+            color: rgb(130, 11, 108);
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Line under subheading */
+        .line {
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            margin: 0;
+        }
+
+        /* Container for the 3 vertical rectangular boxes */
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+            z-index: 2;
+            min-height: 300px; /* Ensure space for boxes */
+        }
+
+        /* Individual boxes */
+        .box {
+            background-color: rgb(130, 11, 108);
+            color: white;
+            width: 180px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            font-size: 22px; /* Increased font size */
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .box:hover {
+            background-color: white;
+            color: rgb(130, 11, 108);
+            transform: translateY(-5px);
+            border: 2px solid rgb(130, 11, 108);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+    <div class="header-container">
+        <!-- Main heading and subheading -->
+        <div id="heading">
+            <h1>ST. ANN'S COLLEGE FOR WOMEN</h1>
+            <h3>(Autonomous), Affiliated To Osmania University, NAAC Reaccredited with 'A+' Grade</h3>
+            <h3>College with Potential for Excellence by UGC, Mehdipatnam, Hyderabad - 500028</h3>
+        </div>
+    </div>
+
+    <!-- Line under the subheading -->
+    <div class="line"></div>
+
+    <!-- Box container for vertical alignment -->
+    <div class="box-container">
+        <!-- Link to Management Login -->
+        <a href="management-login.html">
+            <div class="box">Management</div>
+        </a>
+
+        <!-- Link to Parent Login -->
+        <a href="parent.html">
+            <div class="box">Parent</div>
+        </a>
+
+        <!-- Link to Student Login -->
+        <a href="student-login.html">
+            <div class="box">Student</div>
+        </a>
+    </div>
+
+</body>
+</html>

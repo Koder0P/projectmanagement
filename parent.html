@@ -1,159 +1,112 @@
 <html>
-	<head>
-		<title> Project Management
-		</title>
-        <link rel="icon" type="image/x-icon" href="C:\Users\chada\OneDrive\Documents\meena\project managment\logo.jpeg">
+<head>
+    <title>Project Management</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\chada\OneDrive\Documents\meena\project managment\logo.jpeg">
+    <style>
+        .header-container {
+            text-align: center;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
 
-<style>
-    .header-container{
+        #heading {
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: rgb(130, 11, 108);
+            font-size: 1.5em; /* Reduced font size */
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.2em;
+        }
+
+        #subheading {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 1.1em;
+            color: rgb(80, 80, 80);
+            margin-top: 10px;
+            line-height: 1.5em;
+        }
+
+        .vertical-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px auto;
+            width: 60%;
+            padding-bottom: 100px;
+        }
+
+        .column-div {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid rgb(130, 11, 108);
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            position: relative;
+            font-size: 18px;
         }
-        .logo{
-            width: 100px;
-            height: 100px;
-            margin-left: 20px;
-            margin-right: 20px;
+
+        .courses {
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .back-button-container {
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 20px;
+            top: 120px;
         }
-    
 
-    #heading {
-			 
-             margin: 10px 0;
-             font-family: Times New Roman;
-             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-             color:rgb(130, 11, 108);
-             width: 100%;
-             height:auto;
-             background-size: cover;
-             line-height: 1.5em;
-             text-align: center;
-             position: relative;
-             display: block;
-             overflow: hidden;
-             border-bottom: 5px solid black;
-             padding-bottom: 20px;
-     }
-    .vertical-column {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;  /* Space between divs */
-        margin: 20px auto;  /* Top margin to clear header */
-        width: 60%;  /* Width of column */
-        padding-bottom: 100px;  /* Space for footer */
-    }
-    .column-div {
-        background-color: #f0f0f0;
-        padding: 20px;
-        border: 1px solid rgb(130, 11, 108);
-        border-radius: 5px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        min-height: 40px;
-        display: flex;
-        font-size: 18px; /* Minimum height for each div */
-    }
-    .courses{
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .back-button-container{ 
-        position: absolute;
-        left:20px;
-        top: 120px;
-        color: white;
-        cursor: pointer;
-        font-size: 18px;
-        border-radius: 5px;
-        border: none;
-        padding: 10px 20px;
-    }
-    .back-button:hover{
-        background-color: rgb(130, 11, 108);
-        color: white;
-        transform: translateX(-2px);
-    }
+        .back-button {
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 20px;
+        }
 
-    @keyframes scrollText {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-    }
-
-
-    #footer {
-        margin-top: 10px;
-        font-family: Times New Roman;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgb(130, 11, 108);
-        text-align: center;
-        padding: 10px;
-        overflow: hidden; /* Ensure text doesn't overflow */
-        white-space: nowrap; /* Prevent text from wrapping */
-        /* Add scrolling animation */
-    }
-
-   
-</style>
-<body> 
-    <!--  Header with logo and heading -->
+        .back-button:hover {
+            background-color: rgb(130, 11, 108);
+            color: white;
+            transform: translateX(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with main heading and subheading -->
     <div class="header-container">
-        <img src="C:\Users\chada\OneDrive\Documents\meena\project managment\logo.jpeg" alt="Light of Life Logo" class="logo" ></div>
-        
-    <center><div id="heading">
-                <h1> ST ANN'S COLLEGE FOR WOMEN </h1>
-    </div></center>
-    
+        <div id="heading">
+            <h1>ST ANN'S COLLEGE FOR WOMEN</h1>
+        </div>
+        <div id="subheading">
+            (Autonomous), Affiliated To Osmania University<br>
+            NAAC Reaccredited with 'A+' Grade<br>
+            College with Potential for Excellence by UGC<br>
+            Mehdipatnam, Hyderabad -500 028
+        </div>
+    </div>
 
     <!-- New vertical column -->
-    <center><p class="courses"> COURSES </p></center>
+    <center>
+        <p class="courses">COURSES</p>
+    </center>
     <div class="vertical-column">
-        <div class="column-div"><a href = "BA.html">BA</a> </div>
-        <div class="column-div"><a href = "BBA.html">BBA</a></div>
-        <div class="column-div"><a href = "B.COM.html">B.COM</a></div>
-        <div class="column-div"><a href = "B.Sc LIFE SCIENCES.html">B.Sc LIFE SCIENCES</a></div>
-        <div class="column-div"><a href = "B.Sc PHYSCIAL SCIENCES.html">B.Sc PHYSCIAL SCIENCES</a></div>
+        <div class="column-div"><a href="welcome parent.html">BA</a></div>
+        <div class="column-div"><a href="welcome parent.html">BBA</a></div>
+        <div class="column-div"><a href="welcome parent.html">B.COM</a></div>
+        <div class="column-div"><a href="welcome parent.html">B.Sc LIFE SCIENCES</a></div>
+        <div class="column-div"><a href="welcome parent.html">B.Sc PHYSICAL SCIENCES</a></div>
     </div>
 
     <!-- Back button -->
     <div class="back-button-container">
-        <a href = "main.html"> <button class = "back-button"> Back </button> </a>
+        <button class="back-button">Back</button>
     </div>
-
-
-
-    <!-- Footer -->
-    <div id="footer"><h3> (Autonomous), Affiliated To Osmania University NAAC Reaccredited with 'A+' Grade,
-        <br>College with Potential for Excellence by UGC Mehdipatnam, Hyderabad -500 028 </br> </h3>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
-
-
-
-    
-
-    
